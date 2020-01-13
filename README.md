@@ -1,5 +1,4 @@
-# DomxRotate
-# 大转盘抽奖
+# DomxRotate 大转盘抽奖
 # new DomxRotate(selector,options)
 
 描述：实例化一个大转盘对像。
