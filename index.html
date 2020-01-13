@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="domx.rotate.css">
+    <script src="domx.rotate.js"></script>
+</head>
+
+<body>
+    <div id="container"></div>
+    <script>
+        const awards = [
+            '一等奖-红包',
+            '二等奖-iphone 11',
+            '三等奖-Gucci迷你包',
+            '四等奖-美容仪',
+            '五等奖-阿玛尼精华粉底夜',
+            '六等奖-纪凡希羊皮口红',
+            '七等奖-海尔除螨仪',
+            '八等奖-华为智能体脂称'
+        ];
+        const dxr = new DomxRotate('#container', {
+            awards: awards,
+            // size: 300,
+            callback: function (data) {
+                // console.log(data);
+                alert(awards[data]);
+            },
+        });
+    </script>
+</body>
+
+</html>
